@@ -3,3 +3,12 @@ node_modules
 .cursor
 .next
 
+# SpecStory explanation file
+.specstory/.what-is-this.md
+
+# Cursor settings
+.cursorrules
+.cursorignore
+.cursorindexingignore
+
+.DS_Store

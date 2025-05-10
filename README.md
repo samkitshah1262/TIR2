@@ -30,20 +30,27 @@ cd real-time-translator
 npm install
 ```
 
-3. Run the development server:
+3. Create a `.env` file in the root directory with the following content:
+```bash
+AZURE_SPEECH_KEY=your_api_key_here
+AZURE_SPEECH_REGION=your_region_here
+```
+
+4. Replace `your_api_key_here` with your Azure Speech Services API key and `your_region_here` with your Azure region (e.g., eastus, westeurope)
+
+5. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+6. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Usage
 
-1. Enter your Azure Cognitive Services API key and region
-2. Select your source and target languages
-3. Click the microphone button to start translation
-4. Speak in your selected source language
-5. The translation will appear in real-time
+1. Select your source and target languages
+2. Click the microphone button to start translation
+3. Speak in your selected source language
+4. The translation will appear in real-time
 
 ## Technologies Used
 
@@ -57,9 +64,9 @@ npm run dev
 
 ## Security
 
-- API keys are stored in memory only and never persisted
+- API keys are stored securely in environment variables
 - All communication with Azure services is done over HTTPS
-- No data is stored on servers
+- No sensitive data is stored on servers
 
 ## License
 
