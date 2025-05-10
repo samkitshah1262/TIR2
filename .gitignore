@@ -12,3 +12,5 @@ node_modules
 .cursorindexingignore
 
 .DS_Store
+# SpecStory project identity file
+.specstory/.project.json
